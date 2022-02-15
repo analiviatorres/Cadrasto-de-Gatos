@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <link rel="stylesheet" type="text/css" href="formulario.css" midia="">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <div>
+            <img src="https://media.istockphoto.com/vectors/minimal-cat-logo-vector-id662195090" id="cat">
+            <h1 id="titulo">Cadastro De Gatos</h1>
+            <p id="subtitulo">Complete suas informações abaixo</p>
+        </div>
+
+        <form>
+            <fieldset class="campo">
+                <div>
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required> 
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset>
+            <div class="campo">
+                <label for="email"><strong>E-mail do Responsável</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="campo">
+                <label><strong>Qual a raça do seu gato?</strong></label>
+                <label>
+                    <input type="radio" name="vira-lata" value="vira-lata">Vira-lata
+                </label>
+                <label>
+                    <input type="radio" name="frajola" value="frajola">Frajola
+                </label>
+                <label>
+                    <input type="radio" name="siamês" value="siamês">Siamês
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="fase do animal"><strong>Fase do animal</strong></label>
+                <select id="Fase do animal">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Filhote</option>
+                    <option>Adolescente</option>
+                    <option>Adulto</option>
+                    <option>Idoso</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Características do Bichano:</strong></label><br><br>
+                    <input type="checkbox" id="opção1" name="opção1" value="Calmo">
+                    <label for="opção1">Calmo</label>
+                    <input type="checkbox" id="opção2" name="opção2" value="Agitado">
+                    <lavel for="opção2">Agitado</lavel>
+                    <input type="checkbox" id="opção3" name="opção3" value="Estressado">
+                    <label for="opção3">Estressado</label>
+                    <input type="checkbox" id="opção4" name="opção4" value="Brincalhão">
+                    <label for="opção4">Brincalhão</label>
+                    <input type="checkbox" id="opção5" name="opção5" value="endiabrado">
+                    <label for="opção5">Endiabrado</label>
+
+                </div>
+            </fieldset>
+            <div class="campo">
+                <br>
+                <label><strong>Conte um pouco sobre a rotina do animal:</strong></label>
+                <textarea row="6" style="width: 26em" id="rotina" name="rotina"></textarea>
+            </div> 
+            <button class="botão" type="submit">Concluído</button>
+
+          
+
+        </form>
+
+    </body>
+</html>
